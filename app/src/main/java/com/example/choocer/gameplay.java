@@ -32,25 +32,24 @@ public class gameplay extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public  void game(View view){
 
-            int  guess;
+        int  guess;
 
-                String s = input.getText().toString();
-                guess = Integer.parseInt(s);
+        String s = input.getText().toString();
+        guess = Integer.parseInt(s);
 
-                if (number < guess)
-                {
-                    show.setText(guess + " is big number \nGuess lower number");
-                }
-                if (number > guess)
-                {
-                    show.setText(guess + " is small number \nGuess higher number");
-                }
-                if (number==guess)
-                {
-                    show.setText("\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73 you guess right number in "+ times + " attempt!!!!!");
-                }
-                times++;
-                input.setText("");
-
+        if (number < guess)
+        {
+            show.setText(guess + " is big number \nGuess lower number");
+        }
+        if (number > guess)
+        {
+            show.setText(guess + " is small number \nGuess higher number");
+        }
+        if (number==guess)
+        {
+            show.setText("\uD83E\uDD73\uD83E\uDD73\uD83E\uDD73 you guess right number in "+ times + " attempt!!!!!");
+        }
+        times++;
+        input.setText("");
     }
 }
